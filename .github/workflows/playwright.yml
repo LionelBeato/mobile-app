@@ -13,13 +13,14 @@ jobs:
     - uses: actions/setup-node@v3
       with:
         node-version: 18
-    - name: Change directory
-      run: cd appy
     - name: Install dependencies
+      working-directory: ./appy
       run: npm ci
     - name: Install Playwright Browsers
+      working-directory: ./appy
       run: npx playwright install --with-deps
     - name: Run Playwright tests
+      working-directory: ./appy
       run: npx playwright test
     - uses: actions/upload-artifact@v3
       if: always()
