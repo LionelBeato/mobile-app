@@ -17,7 +17,7 @@ jobs:
       working-directory: ./appy
       run: |
        npm ci
-       npm i -D -E @ionic/app-scripts
+       npm i ionic-cli
     - name: Install Playwright Browsers
       working-directory: ./appy
       run: npx playwright install --with-deps
