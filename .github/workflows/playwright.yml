@@ -15,7 +15,9 @@ jobs:
         node-version: 18
     - name: Install dependencies
       working-directory: ./appy
-      run: npm ci
+      run: |
+       npm ci
+       npm i -D -E @ionic/app-scripts
     - name: Install Playwright Browsers
       working-directory: ./appy
       run: npx playwright install --with-deps
