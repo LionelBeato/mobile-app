@@ -10,5 +10,11 @@ import { ExploreContainerComponent } from '../explore-container/explore-containe
   imports: [IonicModule, ExploreContainerComponent],
 })
 export class Tab1Page {
+
+  isDisabled = true;
   constructor() {}
+
+  onClick() {
+    this.isDisabled = !this.isDisabled;
+  }
 }

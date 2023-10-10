@@ -1,0 +1,29 @@
+#container {
+    text-align: center;
+  
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  #big-button {
+    height: 150px;
+    width: 200px;
+    margin: auto;
+    border-radius:50%;
+    background-color: red;
+    text-align: center;
+    // box-shadow: inset 0em -0.75em 2em rgb(93, 4, 4);
+    // filter: drop-shadow(0em 1.5em black);
+
+    // &::after {
+    //     height: 150px;
+    //     width: 200px;
+    //     margin: auto;
+    //     border-radius:50%;
+    //     background-color: black;
+    //     text-align: center;
+    // }
+  }
