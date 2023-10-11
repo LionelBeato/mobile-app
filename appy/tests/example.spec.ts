@@ -22,3 +22,19 @@ test('get started link', async ({ page }) => {
   // Expects page to have a heading with the name of Installation.
   await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
 });
+
+test('button is disabled', async ({page}) => {
+  await page.goto('/')
+  const element = await page.getByTestId('disabled-button');
+
+  await expect(element).toHaveAttribute('aria-disabled', 'true');
+})
+
+test('clicking on button enables other button', async ({page}) => {
+  await page.goto('/')
+
+  const element = await page.getByTestId('disabled-button');
+  await page.getByTestId('big-button').click;
+
+  await expect(element).toBe();
+})

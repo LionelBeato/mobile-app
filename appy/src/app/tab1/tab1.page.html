@@ -17,7 +17,7 @@
   </app-explore-container> -->
   <div id="container">
     <!-- <div id="big-button"></div> -->
-    <ion-button (click)="onClick()">Click me!</ion-button>
-    <ion-button [disabled]="isDisabled">Click me!</ion-button>
+    <ion-button data-testid="big-button" (click)="onClick()">Click me!</ion-button>
+    <ion-button data-testid="disabled-button" [disabled]="isDisabled">Click me!</ion-button>
   </div>
 </ion-content>
