@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "appy-tests"
+		},
+		{
+			"path": "."
 		}
 	],
 	"settings": {

@@ -18,6 +18,12 @@ This app utilizes the following technologies:
 
 ## Process and Testing
 
+Run playwright tests visually with the following command:
+
+```shell
+npx playwright test --ui
+```
+
 ## Reports??
 
 ## Links
