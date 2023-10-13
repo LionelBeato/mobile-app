@@ -26,6 +26,12 @@ npx playwright test --ui
 
 ## Reports??
 
+Use the command below to generate and view your test report:
+
+```shell
+npx playwright show-report
+```
+
 ## Links
 
 - [How To Automate iOS App Using Appium](https://www.lambdatest.com/blog/how-to-automate-ios-app-using-appium/)
